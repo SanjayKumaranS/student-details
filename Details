@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+struct detail
+{
+    char name[20];
+    int adminno;
+    int mark;
+};
+int main()
+{
+    int i,n;
+    printf("\nEnter number of students :");
+    scanf("%d",&n);
+    struct detail s[n];
+    for(i=0;i<n;i++)
+    {
+        printf("\nSTUDENT %d \n",i+1);
+        printf("\nNAME :");
+        scanf("%s",&s[i].name);
+        printf("\nADMISSION NUMBER :");
+        scanf("%d",&s[i].adminno);
+        printf("\nMARK :");
+        scanf("%d",&s[i].mark);
+    }
+    printf("\n STUDENT DETAILS\n");
+    for(i=0;i<n;i++)
+    {
+        printf("\n NAME : %s",s[i].name);
+        printf("\n ADMISSION NUMBER : %d",s[i].adminno);
+        printf("\n MARK : %d",s[i].mark);
+        printf("\n");
+    }
+
+}
